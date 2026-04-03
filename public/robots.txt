@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /imprint
+Disallow: /datenschutz
+
+Sitemap: https://www.partyservice-alexander.de/sitemap.xml

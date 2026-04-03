@@ -1,0 +1,45 @@
+.serviceBlock {
+  margin-bottom: 4rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.serviceBlock.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Or any other fixed height */
+  margin-bottom: 1.5rem;
+  border: 2px solid #000000;
+  overflow: hidden; /* To keep the image within the rounded corners */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* So it doesn't interfere with image clicks if any */
+}
+
+.textContainer {
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

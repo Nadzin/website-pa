@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-lato);
+  box-sizing: border-box; /* Added box-sizing */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2 {
+  font-family: var(--font-dancing-script);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-playfair-display);
+}

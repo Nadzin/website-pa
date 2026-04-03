@@ -1,0 +1,117 @@
+.main {
+  text-align: center;
+  padding-bottom: 4rem;
+  background-image: url('/pattern.png'); /* Placeholder for a subtle pattern */
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #363636;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #363636;
+  line-height: 1.5;
+}
+
+.ctaContainer {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ctaButton {
+  background-image: linear-gradient(to right, #D92D20 0%, #b9251a 100%); /* Modern gradient */
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Initial subtle shadow */
+  border: 2px solid #000000; /* Changed border color to black */
+}
+
+.ctaButton:hover {
+  background-position: right center; /* Shift gradient on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+.fireworksLeft,
+.fireworksRight {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.firework {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #D92D20;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 0;
+}
+
+.fireworksLeft .firework {
+  left: 0;
+}
+
+.fireworksRight .firework {
+  right: 0;
+}
+
+.ctaContainer:hover .firework {
+  animation: firework-animation 0.8s ease-out;
+}
+
+@keyframes firework-animation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) scale(0);
+  }
+}
+
+.firework1 { --x: -80px; --y: -80px; animation-delay: 0.1s; }
+.firework2 { --x: -80px; --y: 80px; animation-delay: 0.1s; }
+.firework3 { --x: -120px; --y: 0px; animation-delay: 0.2s; }
+.firework4 { --x: -50px; --y: -50px; animation-delay: 0.3s; }
+.firework5 { --x: -100px; --y: -20px; animation-delay: 0.4s; }
+.firework6 { --x: -20px; --y: -100px; animation-delay: 0.4s; }
+.firework7 { --x: -70px; --y: 30px; animation-delay: 0.5s; }
+.firework8 { --x: -30px; --y: 70px; animation-delay: 0.5s; }
+.firework9 { --x: -90px; --y: -40px; animation-delay: 0.6s; }
+.firework10 { --x: -40px; --y: 90px; animation-delay: 0.6s; }
+
+.firework11 { --x: 80px; --y: -80px; animation-delay: 0.1s; }
+.firework12 { --x: 80px; --y: 80px; animation-delay: 0.1s; }
+.firework13 { --x: 120px; --y: 0px; animation-delay: 0.2s; }
+.firework14 { --x: 50px; --y: 50px; animation-delay: 0.3s; }
+.firework15 { --x: 100px; --y: 20px; animation-delay: 0.4s; }
+.firework16 { --x: 20px; --y: 100px; animation-delay: 0.4s; }
+.firework17 { --x: 70px; --y: -30px; animation-delay: 0.5s; }
+.firework18 { --x: 30px; --y: -70px; animation-delay: 0.5s; }
+.firework19 { --x: 90px; --y: 40px; animation-delay: 0.6s; }
+.firework20 { --x: 40px; --y: -90px; animation-delay: 0.6s; }
+
+.centeredImageTextSection {
+  max-width: 400px;
+}
