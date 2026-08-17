@@ -137,7 +137,8 @@ const ContactForm = () => {
             name="location"
             value={formData.location}
             onChange={handleChange}
-            autoComplete="street-address"
+            placeholder="Nur PLZ und Ortschaft"
+            autoComplete="address-level2"
             className={`${styles.input} ${errors.location ? styles.inputError : ''}`}
           />
           {errors.location && <p className={styles.errorMessage}>{errors.location}</p>}
