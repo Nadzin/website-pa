@@ -9,8 +9,18 @@ interface GalleryImage {
 }
 
 const images: GalleryImage[] = [
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0010.jpg', alt: 'Frischer Weißkrautsalat' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0011.jpg', alt: 'Feine Festtagssuppe' },
   { src: '/food_pictures/Verschiedenes/C&D-532.jpg', alt: 'Alexander Nadezkin' },
   { src: '/food_pictures/Verschiedenes/L&A_503.JPG', alt: 'Festliches Buffet' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0009.jpg', alt: 'Festliche Buffet-Tafel' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0054.jpg', alt: 'Canapés und Fingerfood-Platte' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0041.jpg', alt: 'Tomate-Mozzarella-Spieße' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0006.jpg', alt: 'Warmes Buffet Arrangement' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0036.jpg', alt: 'Kalte Fleisch- und Bratenplatte' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0056.jpg', alt: 'Couscous-Vorspeise im Glas' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0007.jpg', alt: 'Frische Salatkreation am Buffet' },
+  { src: '/food_pictures/2026_08/IMG-20260817-WA0008.jpg', alt: 'Knusprige Schnitzelvariationen' },
   { src: '/food_pictures/Verschiedenes/A&J-582.jpg', alt: 'Frische Salate' },
   { src: '/food_pictures/Verschiedenes/C&D-535.jpg', alt: 'Kaltes Buffet' },
   { src: '/food_pictures/Verschiedenes/L&A_505.JPG', alt: 'Reichhaltige Auswahl' },
