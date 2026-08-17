@@ -2,8 +2,8 @@ import styles from '../page.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Impressum & AGB',
-    description: 'Impressum und Allgemeine Geschäftsbedingungen (AGB) von Partyservice Alexander.',
+  title: 'Impressum & AGB',
+  description: 'Impressum und Allgemeine Geschäftsbedingungen (AGB) von Partyservice Alexander.',
 };
 
 export default function Impressum() {
@@ -62,7 +62,7 @@ export default function Impressum() {
         <section style={{ marginBottom: '2rem' }}>
           <h2>Anzahlung</h2>
           <p>
-            Für eine verbindliche Reservierung an Ihrem Hochzeitstag wird eine Anzahlung von 500€ fällig. Restsumme muss am Hochzeitstag in bar bezahlt werden.
+            Für eine verbindliche Reservierung an Ihrem Hochzeitstag wird eine Anzahlung von 500€ fällig.
             Eine unverbindliche Reservierung ist auch ohne Anzahlung möglich. Diese wird erst mit dem Eingang der Anzahlung auf unser Konto verbindlich.
             Bis dahin behalten wir uns vor auch andere Interessenten für diesen Termin zu berücksichtigen, sofern diese eine Anzahlung leisten.
           </p>
