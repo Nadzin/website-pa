@@ -34,6 +34,11 @@ const ContactForm = () => {
     if (!formData.location) newErrors.location = 'Bitte geben Sie den Veranstaltungsort ein.';
     if (!formData.eventType) newErrors.eventType = 'Bitte wählen Sie einen Veranstaltungstyp aus.';
     if (!formData.eventDate) newErrors.eventDate = 'Bitte wählen Sie ein Veranstaltungsdatum aus.';
+    if (!formData.phoneNumber) {
+      newErrors.phoneNumber = 'Bitte geben Sie eine Telefonnummer an.';
+    } else if (!/^\+?[\d\s\-().]{6,20}$/.test(formData.phoneNumber)) {
+      newErrors.phoneNumber = 'Ungültige Telefonnummer. Erlaubt: Ziffern, Leerzeichen, +, -, (, ).';
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -116,7 +121,7 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="phoneNumber" className={styles.label}>Telefonnummer (optional):</label>
+          <label htmlFor="phoneNumber" className={styles.label}>Telefonnummer *:</label>
           <input
             type="tel"
             id="phoneNumber"
